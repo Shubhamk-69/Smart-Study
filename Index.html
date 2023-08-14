@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Room</title>
+</head>
+
+<body>
+
+<div class="header">
+
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="">My Profile</a>
+    <a href="website.html">Home</a>
+    <a href="notes.html">Study Material</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </div>
+  
+  <div id="content">
+    <div class="hamburger" id="hamburger" onclick="toggleNav()">&#9776;</div>
+  </div>
+  
+</div>
+
+<div class="main_page">
+  <div class="main-element">
+    <a href="notes.html" class="rand-el"> Class-12, Physics, Chapter-1 Electrostics</a>
+    <a href="website.html" class="rand-el1"> Class-12, Physics, Chapter-1 Electrostics</a>
+  </div>
+  <div class="notes">
+    <p>Notes</p>
+  </div>
+</div>
+
+<div class="footer">
+  <h4> Support us On </h4>
+  <p class="socialmedia">
+      Instagram <br> Youtube <br> Facebook <br> Twitter
+  </p>
+  
+  <div class="copyright">
+      <hr>
+      <p style="font-size: smaller;"> Conditions of Use & Sale<br>© 2023-2023, Youthhub.com, Inc. or its affiliates</p>
+
+  </div>
+  
+</div>
+</body>
+
+<style>
+  *{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .sign-up{
+    background-color: aqua;
+    color:black;
+    width: auto;
+    height: 50px;
+  }
+
+  .header{
+    width: 100%;
+    height: 100px;
+    background-color: yellow;
+  }
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 16px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #ffee00;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #content {
+    transition: margin-left 0.5s;
+    padding: 16px;
+  }
+
+  .hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+  } 
+  
+  .main_page{
+    width: 100%;
+    height:700px;
+    background-color:blanchedalmond
+
+  }
+  .notes{
+    text-align: center;
+  }
+  p{
+    font-size: 60px;
+    margin-top: 10px;
+  }
+  .rand-el{
+    margin-left: 20px;
+    padding-left: 20px;
+    width: 750px;
+    height: auto;
+    font-size: 40px;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    top: 200px;
+    text-align: center;
+    border: solid #000000;
+    border-radius: 20px;
+
+  }
+  .rand-el1{
+    margin-left: 20px;
+    padding-left: 20px;
+    width: 750px;
+    height: auto;
+    font-size: 40px;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    top: 270px;
+    text-align: center;
+    border: solid #000000;
+    border-radius: 20px;
+
+  }
+  .footer{
+        height: 500px;
+        width: 100%;
+        background-color: black;
+    }
+    h4{
+        font-size: 20px;
+        color: aliceblue;
+        margin: 10px;
+        
+    }
+    .socialmedia{
+        color: aliceblue;
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .copyright{
+        background-color: black;
+        color: aliceblue;
+        padding-top: 400px;
+        text-align: center;
+        margin-bottom:10px;
+    }
+    .copyright p{
+      margin-bottom:10px ;
+    }
+
+</style>
+
+<script>
+  
+function toggleNav() {
+  var sidebar = document.getElementById("mySidebar");
+  var hamburger = document.getElementById("hamburger");
+  
+  sidebar.style.width = sidebar.style.width === "250px" ? "0" : "250px";
+  hamburger.style.display = "none"; // Hide the hamburger icon
+}
+
+function closeNav() {
+  var sidebar = document.getElementById("mySidebar");
+  var hamburger = document.getElementById("hamburger");
+  
+  sidebar.style.width = "0";
+  hamburger.style.display = "block"; // Display the hamburger icon
+}
+</script>
